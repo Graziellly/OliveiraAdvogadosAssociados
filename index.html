@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oliveira Advogados Associados</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #FFF;
+    }
+
+    header {
+      background-color: #031e3d;
+      padding: 20px 0;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+      border-radius: 6px;
+    }
+
+    .navbar-toggler {
+      padding: 4px 6px;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+
+    .navbar-collapse {
+      background-color: #031e3d;
+      padding: 35px;
+      border-radius: 8px;
+    }
+
+    .navbar-collapse .nav-link {
+      color: white !important;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+   .hero {
+  background-color: #031e3d;
+  color: white;
+  padding: 40px 20px 20px 20px; /* top reduzido para aproximar o conteúdo */
+  text-align: center;
+}
+
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+
+    .hero-logo {
+      max-width: 350px;
+      display: block;
+      margin: 0 auto 5px auto;
+      border-radius: 0;           /* sem arredondamento */
+      border: none;               /* remove a borda */
+      box-shadow: none;  
+      image-rendering: auto;         /* remove a sombra */
+    }
+    .endereco {
+      text-align: center;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .endereco h2 {
+      margin-bottom: 15px;
+    }
+
+    .endereco p {
+      margin: 4px 0;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .card-icon i {
+      font-size: 2rem;
+      color: #031e3d;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      transition: 0.3s;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: #004d99;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .social-icons i {
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #031e3d;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .footer-icon i {
+      margin: 0 10px;
+      color: white;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-nav {
+        align-items: center;
+        text-align: center;
+      }
+
+     
+
+      .card {
+        padding: 20px 10px;
+      }
+
+      .floating-whatsapp {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+      }
+
+      .english-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 10px 20px;
+        background-color: #0066cc;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+      }
+
+      .english-btn:hover {
+        background-color: #004d99;
+        transform: scale(1.03);
+        box-shadow: 0 6px 16px rgba(0, 102, 204, 0.3);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#atuacao">Áreas de Atuação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#funciona">Como Funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#endereco">Endereço</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero" data-aos="fade-up">
+    <img src="logoseudireito-removebg-preview.png" alt="Logo" class="hero-logo mb-4">
+    <h1></h1>
+    <p>Defendemos seus direitos com agilidade e segurança. Atendimento 100% online e personalizado.</p>
+  </div>
+
+  <!-- QUEM SOMOS -->
+  <section id="sobre" class="container text-center" data-aos="fade-up">
+    <h2>Quem Somos</h2>
+    <p>Somos um escritório de advocacia digital, especializado em Direito Aéreo, Saúde e Defesa do Consumidor. Atendimento ágil, personalizado e 100% online em todo o Brasil.</p>
+  </section>
+
+  <!-- ÁREAS DE ATUAÇÃO -->
+  <section id="atuacao" class="container" data-aos="fade-up">
+    <h2 class="text-center mb-5">Áreas de Atuação</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <div class="card-icon mb-3"><i class="fas fa-plane"></i></div>
+          <h5 class="card-title">Direito Aéreo</h5>
+          <p>Atrasos, cancelamentos, extravio de bagagem e indenizações por danos em voos.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <div class="card-icon mb-3"><i class="fas fa-heart-pulse"></i></div>
+          <h5 class="card-title">Direito da Saúde</h5>
+          <p>Negativa de plano, medicamentos de alto custo, tratamentos e cirurgias.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <div class="card-icon mb-3"><i class="fas fa-cart-shopping"></i></div>
+          <h5 class="card-title">Direito do Consumidor</h5>
+          <p>Problemas com produtos e serviços, cobranças indevidas, contratos abusivos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="funciona" class="container text-center" data-aos="fade-up">
+    <h2>Como Funciona o Atendimento</h2>
+    <ol class="text-start mx-auto" style="max-width: 600px;">
+      <li>Envie sua situação pelo WhatsApp</li>
+      <li>Analisamos gratuitamente</li>
+      <li>Caso tenha direito, ajuizamos a ação sem burocracia</li>
+    </ol>
+  </section>
+
+  <!-- ENDEREÇO -->
+  <section id="endereco" class="text-center">
+    <div class="endereco">
+      <h2>Endereço Comercial</h2>
+      <p>Alameda dos Arapanés, nº 890 – Sala 1904</p>
+      <p>Bairro Indianópolis - São Paulo-SP</p>
+      <p>CEP: 04524-001</p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="text-center">
+    <h2>Contato</h2>
+    <p>Fale conosco diretamente:</p>
+    <div class="social-icons">
+      <a href="https://wa.me/5511988133955" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/consumidoraereosaude" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:advconsumidoraereoesaude@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+    <a href="en.html" class="english-link"><i class="fas fa-globe"></i> English</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <p>&copy; 2025 Oliveira Advogados Associados - Todos os direitos reservados.</p>
+    <div class="footer-icon"></div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/5511988133955" class="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

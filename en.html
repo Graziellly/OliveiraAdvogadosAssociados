@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oliveira Law Firm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #FFF;
+    }
+    header {
+      background-color: #031e3d;
+      padding: 20px 0;
+    }
+    .navbar-brand img {
+      height: 60px;
+      border-radius: 6px;
+    }
+    .navbar-toggler {
+      padding: 4px 6px;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+    }
+    .navbar-collapse {
+      background-color: #031e3d;
+      padding: 35px;
+      border-radius: 8px;
+    }
+    .navbar-collapse .nav-link {
+      color: white !important;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .hero {
+      background-color: #031e3d;
+      color: white;
+      padding: 40px 20px 20px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .hero-logo {
+      max-width: 350px;
+      display: block;
+      margin: 0 auto 5px auto;
+      border-radius: 0;           /* no rounding */
+      border: none;               /* remove border */
+      box-shadow: none;           /* remove shadow */
+      image-rendering: auto;      /* remove shadow */
+    }
+
+    .endereco {
+      text-align: center;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .card-icon i {
+      font-size: 2rem;
+      color: #031e3d;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      transition: 0.3s;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+    .social-icons a {
+      text-decoration: none;
+      color: #004d99;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    footer {
+      background-color: #031e3d;
+      color: white;
+      padding: 40px 20px;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1000;
+    }
+    @media (max-width: 768px) {
+      .navbar-nav {
+        align-items: center;
+        text-align: center;
+      }
+      .floating-whatsapp {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#practice">Practice Areas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#address">Address</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero" data-aos="fade-up">
+    <img src="logoseudireito-removebg-preview.png" alt="Logo" class="hero-logo mb-4">
+    <h1></h1>
+    <p>We defend your rights with agility and security. 100% online and personalized service.</p>
+  </div>
+
+  <section id="about" class="container text-center" data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>We are a digital law firm specializing in Aviation Law, Health Law, and Consumer Defense. Fast, personalized, and fully online service throughout Brazil.</p>
+  </section>
+
+  <section id="practice" class="container" data-aos="fade-up">
+    <h2 class="text-center mb-5">Practice Areas</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <div class="card-icon mb-3"><i class="fas fa-plane"></i></div>
+          <h5 class="card-title">Aviation Law</h5>
+          <p>Delays, cancellations, lost luggage, and compensation for flight damages.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <div class="card-icon mb-3"><i class="fas fa-heart-pulse"></i></div>
+          <h5 class="card-title">Health Law</h5>
+          <p>Insurance denials, expensive medications, treatments, and surgeries.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <div class="card-icon mb-3"><i class="fas fa-cart-shopping"></i></div>
+          <h5 class="card-title">Consumer Law</h5>
+          <p>Product and service issues, unfair charges, abusive contracts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="container text-center" data-aos="fade-up">
+    <h2>How It Works</h2>
+    <ol class="text-start mx-auto" style="max-width: 600px;">
+      <li>Send your case via WhatsApp</li>
+      <li>We analyze it for free</li>
+      <li>If you are entitled, we file the claim without bureaucracy</li>
+    </ol>
+  </section>
+
+  <section id="address" class="text-center">
+    <div class="endereco">
+      <h2>Office Address</h2>
+      <p>Alameda dos Arapanés, nº 890 – Room 1904</p>
+      <p>Indianópolis District - São Paulo-SP</p>
+      <p>ZIP Code: 04524-001</p>
+    </div>
+  </section>
+
+  <section id="contact" class="text-center">
+    <h2>Contact</h2>
+    <p>Contact us directly:</p>
+    <div class="social-icons">
+      <a href="https://wa.me/5511988133955" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/consumidoraereosaude" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:advconsumidoraereoesaude@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+    <a href="index.html" class="english-link"><i class="fas fa-globe"></i> Português</a>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2025 Oliveira Law Firm - All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/5511988133955" class="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
